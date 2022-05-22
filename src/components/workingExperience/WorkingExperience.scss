@@ -1,0 +1,44 @@
+.working-experience {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.role {
+  border: 1px solid var(--primary-color-variant);
+  width: calc(var(--card-size) * 2);
+  padding: 2rem;
+  margin-top: 1.5rem;
+  min-height: calc(var(--card-size) * 2.5);
+  max-height: fit-content;
+  border-radius: var(--button-border-radius);
+  transition: var(--transition);
+
+  h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  ul {
+    margin-top: 1rem;
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+
+  ul li {
+    margin-top: 0.6rem;
+    display: list-item;
+    list-style-position: outside;
+    list-style-type: square;
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    background: var(--bg-color-variant);
+  }
+}

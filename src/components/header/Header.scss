@@ -1,0 +1,100 @@
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 30px;
+  overflow: hidden;
+
+  .header-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: max-content;
+  }
+
+  & h2{
+    font-size: 0.8rem;
+  }
+
+  .profession{
+    color: var(--color-light);
+  }
+
+  .header-body{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    overflow: hidden;
+
+    .social-media{
+      position: relative;
+      bottom: 0rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 40px;
+      color: var(--primary-color);
+
+      &::after
+      {
+        content: '';
+        width: 1px;
+        height: 3rem;
+        background-color: var(--primary-color);
+      }
+
+      & :not(style):hover{
+        color: var(--color-white);
+        cursor: pointer;
+      }
+    }
+
+    .avatar{
+      margin-top: 2.3rem;
+      text-align:  center;
+      width: var(--avatar-width);
+      height: var(--avatar-cont-height);
+      background: linear-gradient(var(--primary-color), black);
+      border-top-left-radius: var(--avatar-border-radius);
+      border-top-right-radius: var(--avatar-border-radius);
+      padding-top: 6rem;
+      overflow: hidden;
+      transition: var(--transition);
+      
+      img{
+        width: calc(var(--avatar-width) * 0.7);
+        filter: hue-rotate(120deg);
+        border-top-left-radius: var(--avatar-border-radius);
+        border-top-right-radius: var(--avatar-border-radius);
+      }
+
+      &:hover{
+        transform: perspective(100px) translate3d(0, 0, 5px);
+      }
+    }
+
+    .scrollbar{
+      position: relative;
+      transform: rotate(90deg);
+      width: 2rem;
+      bottom: 4.3rem;
+      white-space: nowrap;
+      color: var(--primary-color);
+      font-size: 300;
+
+      &:hover{
+        cursor: default;
+        color: var(--color-white)
+      }
+    }
+  }
+}

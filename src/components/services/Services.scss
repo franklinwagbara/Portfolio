@@ -1,0 +1,43 @@
+#services {
+  text-align: center;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.service {
+  width: calc(var(--card-size) * 1.4);
+  height: fit-content;
+  border: 1px solid var(--primary-color-variant);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: var(--bg-color-variant);
+
+  & > div {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  ul {
+    text-align: left;
+    padding: 2.2rem;
+    padding-right: 1rem;
+
+    div {
+      display: flex;
+      gap: 1rem;
+      p {
+        display: inline-block;
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+      }
+    }
+  }
+}

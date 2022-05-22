@@ -1,0 +1,12 @@
+#experience {
+  border: 1px solid var(--bg-color-variant);
+  border-radius: var(--button-border-radius);
+  padding-bottom: 7rem;
+  & > p {
+    margin-top: -15px;
+    margin-left: 10px;
+    background: var(--bg-color);
+    width: 95px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+.skills-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1rem 2rem;
+
+  .backend,
+  .frontend {
+    border: 1px solid var(--bg-color-variant);
+    border-radius: var(--button-border-radius);
+    background: var(--bg-color-variant);
+    transition: var(--transition);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem;
+    grid-auto-rows: 4rem;
+    padding: 2rem;
+
+    & > h2 {
+      grid-column: 1 / span 2;
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  & h5 {
+    color: var(--color-light);
+  }
+}
+
+.skill {
+  text-align: left;
+  display: flex;
+  align-items: start;
+  margin: 0.5rem;
+
+  & > :first-child {
+    color: var(--primary-color);
+    display: inline;
+    margin-top: 8px;
+    margin-right: 1rem;
+  }
+}
