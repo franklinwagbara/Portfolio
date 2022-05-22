@@ -21,6 +21,7 @@
   &:hover {
     background-color: transparent;
     border: 1px solid var(--bg-color-variant);
+    transform: perspective(100px) translateZ(10px);
   }
 
   .project__image {

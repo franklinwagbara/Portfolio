@@ -1,7 +1,7 @@
 import "./App.scss";
 import Header from "./components/header/Header";
 import Navbar, { NavItem } from "./components/navbar/Navbar";
-import { HiOutlineHome } from "react-icons/hi";
+import { HiOutlineHome, HiOutlineBriefcase } from "react-icons/hi";
 import { FiUser } from "react-icons/fi";
 import { BsJournalBookmark } from "react-icons/bs";
 import { MdOutlineContactPhone } from "react-icons/md";
@@ -31,6 +31,9 @@ export default function App() {
           </NavItem>
           <NavItem name="services" url="#services">
             <MdOutlineMiscellaneousServices />
+          </NavItem>
+          <NavItem name="portfolio" url="#portfolio">
+            <HiOutlineBriefcase />
           </NavItem>
           <NavItem name="contact" url="#contact">
             <MdOutlineContactPhone />

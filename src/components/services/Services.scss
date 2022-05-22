@@ -1,10 +1,9 @@
-#services {
-  text-align: center;
-}
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .service {
@@ -14,6 +13,11 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: var(--bg-color-variant);
+  transition: var(--transition);
+
+  &:hover {
+    transform: perspective(100px) translateZ(10px);
+  }
 
   & > div {
     background: var(--primary-color);

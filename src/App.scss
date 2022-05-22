@@ -90,6 +90,12 @@ body {
 .btn-primary {
   background: var(--primary-color) !important;
   color: var(--bg-color-variant) !important;
+
+  &:hover {
+    background: transparent !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color-variant);
+  }
 }
 
 h2,
@@ -121,6 +127,11 @@ section {
   min-height: max-content;
   width: 100%;
   margin-top: 7rem;
+  text-align: center;
+
+  & > h2 {
+    margin-bottom: 2rem;
+  }
 }
 
 a {

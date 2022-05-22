@@ -50,6 +50,8 @@ const projects = [
 const Portfolio = (props) => {
   return (
     <section id="portfolio">
+      <h5>My</h5>
+      <h2>Projects</h2>
       <Projects projects={projects} />
     </section>
   );
