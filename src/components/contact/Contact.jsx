@@ -2,8 +2,33 @@ import "./Contact.scss";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = (props) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_5lllypt",
+        "template_7zl8zfv",
+        form.current,
+        "p4BMncuKLTQqjeNJv"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
   return (
     <section id="contact">
       <h5>My</h5>
@@ -37,11 +62,13 @@ const Contact = (props) => {
             </a>
           </article>
         </div>
-        <form action="">
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message" />
-          <button type="submit"></button>
+        <form ref={form} className="form" onSubmit={sendEmail}>
+          <input name="name" type="text" placeholder="Full Name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required />
+          <button className="btn btn-primary" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </section>

@@ -21,7 +21,7 @@ const CTA = ({
 };
 
 CTA.propTypes = {
-  download: PropTypes.bool.isRequired,
+  download: PropTypes.bool,
   action1: PropTypes.string.isRequired,
   action2: PropTypes.string.isRequired,
   label1: PropTypes.string.isRequired,

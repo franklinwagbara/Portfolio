@@ -1,7 +1,14 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: 30% 58%;
+  gap: 3rem;
 
   .contact__options {
     display: flex;
@@ -42,5 +49,32 @@
         border: 1px solid var(--primary-color-variant);
       }
     }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  transition: var(--transition);
+
+  & input,
+  textarea {
+    background: transparent;
+    width: 30rem;
+    resize: none;
+    border: 1px solid var(--primary-color-variant);
+    padding: 1rem;
+    border-radius: var(--button-border-radius);
+    color: white;
+  }
+
+  & input {
+    height: 3rem;
+  }
+
+  & textarea {
+    height: 10rem;
   }
 }
