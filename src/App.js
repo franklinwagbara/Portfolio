@@ -45,8 +45,8 @@ export default function App() {
         <Portfolio />
         <Testimonials />
         <Contact />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

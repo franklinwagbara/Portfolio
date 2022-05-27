@@ -1,4 +1,4 @@
-.header{
+.header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,23 +9,31 @@
   padding-top: 30px;
   overflow: hidden;
 
-  .header-intro{
+  .header-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: max-content;
+    min-width: fit-content;
+
+    & h2 {
+      font-size: 0.8rem;
+    }
+
+    .profession {
+      color: var(--color-light);
+    }
+
+    @media screen and (max-width: 640px) {
+      h1 {
+        word-wrap: break-word;
+        white-space: normal;
+        text-align: center;
+      }
+    }
   }
 
-  & h2{
-    font-size: 0.8rem;
-  }
-
-  .profession{
-    color: var(--color-light);
-  }
-
-  .header-body{
+  .header-body {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -34,7 +42,7 @@
     width: 100%;
     overflow: hidden;
 
-    .social-media{
+    .social-media {
       position: relative;
       bottom: 0rem;
       display: flex;
@@ -44,23 +52,31 @@
       width: 40px;
       color: var(--primary-color);
 
-      &::after
-      {
-        content: '';
+      &::after {
+        content: "";
         width: 1px;
         height: 3rem;
         background-color: var(--primary-color);
       }
 
-      & :not(style):hover{
+      & a {
+        color: var(--primary-color);
+      }
+
+      & :not(style):hover {
         color: var(--color-white);
         cursor: pointer;
       }
+
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
     }
 
-    .avatar{
+    .avatar {
+      margin: 0 auto;
       margin-top: 2.3rem;
-      text-align:  center;
+      text-align: center;
       width: var(--avatar-width);
       height: var(--avatar-cont-height);
       background: linear-gradient(var(--primary-color), black);
@@ -69,20 +85,20 @@
       padding-top: 6rem;
       overflow: hidden;
       transition: var(--transition);
-      
-      img{
+
+      img {
         width: calc(var(--avatar-width) * 0.7);
         filter: hue-rotate(120deg);
         border-top-left-radius: var(--avatar-border-radius);
         border-top-right-radius: var(--avatar-border-radius);
       }
 
-      &:hover{
+      &:hover {
         transform: perspective(100px) translate3d(0, 0, 5px);
       }
     }
 
-    .scrollbar{
+    .scrollbar {
       position: relative;
       transform: rotate(90deg);
       width: 2rem;
@@ -91,9 +107,13 @@
       color: var(--primary-color);
       font-size: 300;
 
-      &:hover{
+      &:hover {
         cursor: default;
-        color: var(--color-white)
+        color: var(--color-white);
+      }
+
+      @media screen and (max-width: 640px) {
+        display: none;
       }
     }
   }

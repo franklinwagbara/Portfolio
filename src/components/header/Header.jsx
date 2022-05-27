@@ -6,7 +6,7 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-  faFacebook
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Header = (props) => {
@@ -39,10 +39,18 @@ export const HeaderIntro = () => {
 export const SocialMedia = () => {
   return (
     <div className="social-media">
-      <FontAwesomeIcon icon={faLinkedin} />
-      <FontAwesomeIcon icon={faTwitter} />
-      <FontAwesomeIcon icon={faGithub} />
-      <FontAwesomeIcon icon={faFacebook} />
+      <a href="">
+        <FontAwesomeIcon icon={faLinkedin} />
+      </a>
+      <a href="">
+        <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a href="">
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
+      <a href="">
+        <FontAwesomeIcon icon={faFacebook} />
+      </a>
     </div>
   );
 };

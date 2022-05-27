@@ -1,0 +1,42 @@
+#footer {
+  height: 30rem;
+  width: 100vw;
+  background-color: var(--primary-color);
+  padding: 2rem;
+
+  & > h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a,
+  :not(style) {
+    color: var(--bg-color);
+  }
+
+  .footer__nav {
+    margin-top: 1rem;
+
+    ul {
+      list-style: none;
+
+      & li {
+        display: inline-block;
+        margin: 1rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer__social {
+    & :not(style) {
+      font-size: 2rem;
+      cursor: pointer;
+      margin: 0.7rem;
+    }
+  }
+}

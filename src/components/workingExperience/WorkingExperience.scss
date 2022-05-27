@@ -42,3 +42,16 @@
     background: var(--bg-color-variant);
   }
 }
+
+/////MEDIA QUERIES //////////////
+@media screen and (max-width: 900px) {
+  .jobs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .role {
+    width: fit-content;
+  }
+}

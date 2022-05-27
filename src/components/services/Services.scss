@@ -45,3 +45,9 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
