@@ -8,6 +8,7 @@ import {
   faTwitter,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import CV from "../../assets/cv.PDF";
 
 const Header = (props) => {
   return (
@@ -31,7 +32,7 @@ export const HeaderIntro = () => {
       <h2>Hello, I'm</h2>
       <h1>Franklin Wagbara</h1>
       <h2 className="profession">Software Engineer</h2>
-      <CTA />
+      <CTA action1={CV} />
     </div>
   );
 };

@@ -5,8 +5,8 @@ const CTA = ({
   download = false,
   label1 = "Download CV",
   label2 = "Let's Talk",
-  action1 = "./CTA.scss",
-  action2,
+  action1 = "",
+  action2 = "#contact",
 }) => {
   return (
     <div className="cta">
