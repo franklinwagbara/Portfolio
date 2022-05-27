@@ -20,10 +20,9 @@ const About = (props) => {
           <div className="main-content">
             <Cards />
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-              id asperiores voluptate omnis maiores amet commodi quasi
-              accusantium fuga ut animi itaque corporis, eos est ex recusandae!
-              Aut modi, aspernatur quo, quae aperiam quis id cum soluta
+              Detail-oriented, organized and meticulous employee. Works at fast
+              pace to meet tight deadlines. Enthusiastic team player ready to
+              contribute to company success.
             </p>
             <button className="btn btn-primary">Let's Talk</button>
           </div>
@@ -48,7 +47,6 @@ export const Card = ({ icon, header, subtitle }) => {
 export const Cards = (props) => {
   return (
     <div className="cards">
-      {" "}
       <Card
         icon={<GiMedal />}
         header={"Experience"}
@@ -62,7 +60,7 @@ export const Cards = (props) => {
       <Card
         icon={<AiFillProject />}
         header={"Projects"}
-        subtitle="40+ Completed"
+        subtitle="50+ Completed"
       />
     </div>
   );
