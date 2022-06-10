@@ -1,5 +1,6 @@
 import "./Portfolio.scss";
 import Project1 from "../../assets/images/projects/project1.jpg";
+import CryptoFinder from "../../assets/images/projects/crypto_finder.PNG";
 import CTA from "../CTA/CTA";
 
 const projects = [
@@ -12,10 +13,10 @@ const projects = [
   },
   {
     id: 2,
-    image: Project1,
-    heading: "Real Estate website for a reputable real estate company",
-    gitHub: "https://github.com/franklinwagbara/Portfolio",
-    projectURL: "https://github.com/franklinwagbara/Portfolio",
+    image: CryptoFinder,
+    heading: "Get All The Information Regarding Your Favorite Cryto-Currency",
+    gitHub: "https://franklin-crypto-finder.netlify.app/",
+    projectURL: "https://github.com/franklinwagbara/Crypto-finder",
   },
   {
     id: 3,
