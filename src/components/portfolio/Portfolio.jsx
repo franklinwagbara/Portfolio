@@ -15,8 +15,8 @@ const projects = [
     id: 2,
     image: CryptoFinder,
     heading: "Get All The Information Regarding Your Favorite Cryto-Currency",
-    gitHub: "https://franklin-crypto-finder.netlify.app/",
-    projectURL: "https://github.com/franklinwagbara/Crypto-finder",
+    gitHub: "https://github.com/franklinwagbara/Crypto-finder",
+    projectURL: "https://franklin-crypto-finder.netlify.app/",
   },
   {
     id: 3,
