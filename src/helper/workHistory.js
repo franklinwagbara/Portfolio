@@ -24,16 +24,6 @@ const workHistory = [
         value:
           "Worked with more than 50 customers for needs analysis, proposal development and vendor costs to produce competitive estimates.",
       },
-      {
-        id: 5,
-        value:
-          "Partnered with development team on product develpment, application support plans and prototype programs.",
-      },
-      {
-        id: 6,
-        value:
-          "Wrote highly maintainable, solid code for software system, forming core framework and earning consistent praise from subsequent developers since initial version.",
-      },
     ],
   },
   {
