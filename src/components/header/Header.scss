@@ -17,7 +17,14 @@
     min-width: fit-content;
 
     & h2 {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .greeting {
+      color: var(--primary-color);
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     .profession {
@@ -88,7 +95,6 @@
 
       img {
         width: calc(var(--avatar-width) * 0.7);
-        filter: hue-rotate(120deg);
         border-top-left-radius: var(--avatar-border-radius);
         border-top-right-radius: var(--avatar-border-radius);
       }
@@ -105,7 +111,8 @@
       bottom: 4.3rem;
       white-space: nowrap;
       color: var(--primary-color);
-      font-size: 300;
+      font-size: 0.75rem;
+      font-weight: 300;
 
       &:hover {
         cursor: default;

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#4db5ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#4db5ff;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4db5ff;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#4db5ff;stop-opacity:0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" rx="12" fill="url(#bgGrad2)"/>
+
+  <!-- Subtle grid dots -->
+  <g fill="#4db5ff" opacity="0.06">
+    <circle cx="30" cy="30" r="1.5"/><circle cx="70" cy="30" r="1.5"/><circle cx="110" cy="30" r="1.5"/><circle cx="150" cy="30" r="1.5"/><circle cx="190" cy="30" r="1.5"/><circle cx="230" cy="30" r="1.5"/><circle cx="270" cy="30" r="1.5"/><circle cx="310" cy="30" r="1.5"/><circle cx="350" cy="30" r="1.5"/><circle cx="390" cy="30" r="1.5"/><circle cx="430" cy="30" r="1.5"/><circle cx="470" cy="30" r="1.5"/><circle cx="510" cy="30" r="1.5"/><circle cx="550" cy="30" r="1.5"/>
+    <circle cx="30" cy="70" r="1.5"/><circle cx="70" cy="70" r="1.5"/><circle cx="110" cy="70" r="1.5"/><circle cx="150" cy="70" r="1.5"/><circle cx="190" cy="70" r="1.5"/><circle cx="230" cy="70" r="1.5"/><circle cx="270" cy="70" r="1.5"/><circle cx="310" cy="70" r="1.5"/><circle cx="350" cy="70" r="1.5"/><circle cx="390" cy="70" r="1.5"/><circle cx="430" cy="70" r="1.5"/><circle cx="470" cy="70" r="1.5"/><circle cx="510" cy="70" r="1.5"/><circle cx="550" cy="70" r="1.5"/>
+    <circle cx="30" cy="110" r="1.5"/><circle cx="70" cy="110" r="1.5"/><circle cx="110" cy="110" r="1.5"/><circle cx="150" cy="110" r="1.5"/><circle cx="190" cy="110" r="1.5"/><circle cx="230" cy="110" r="1.5"/><circle cx="270" cy="110" r="1.5"/><circle cx="310" cy="110" r="1.5"/><circle cx="350" cy="110" r="1.5"/><circle cx="390" cy="110" r="1.5"/><circle cx="430" cy="110" r="1.5"/><circle cx="470" cy="110" r="1.5"/><circle cx="510" cy="110" r="1.5"/><circle cx="550" cy="110" r="1.5"/>
+    <circle cx="30" cy="150" r="1.5"/><circle cx="70" cy="150" r="1.5"/><circle cx="110" cy="150" r="1.5"/><circle cx="150" cy="150" r="1.5"/><circle cx="190" cy="150" r="1.5"/><circle cx="230" cy="150" r="1.5"/><circle cx="270" cy="150" r="1.5"/><circle cx="310" cy="150" r="1.5"/><circle cx="350" cy="150" r="1.5"/><circle cx="390" cy="150" r="1.5"/><circle cx="430" cy="150" r="1.5"/><circle cx="470" cy="150" r="1.5"/><circle cx="510" cy="150" r="1.5"/><circle cx="550" cy="150" r="1.5"/>
+    <circle cx="30" cy="190" r="1.5"/><circle cx="70" cy="190" r="1.5"/><circle cx="110" cy="190" r="1.5"/><circle cx="150" cy="190" r="1.5"/><circle cx="190" cy="190" r="1.5"/><circle cx="230" cy="190" r="1.5"/><circle cx="270" cy="190" r="1.5"/><circle cx="310" cy="190" r="1.5"/><circle cx="350" cy="190" r="1.5"/><circle cx="390" cy="190" r="1.5"/><circle cx="430" cy="190" r="1.5"/><circle cx="470" cy="190" r="1.5"/><circle cx="510" cy="190" r="1.5"/><circle cx="550" cy="190" r="1.5"/>
+  </g>
+
+  <!-- Dashboard / Analytics chart -->
+  <g transform="translate(165, 60)">
+    <!-- Chart background panel -->
+    <rect x="0" y="0" width="270" height="170" rx="10" fill="#ffffff" fill-opacity="0.03" stroke="#4db5ff" stroke-width="0.8" opacity="0.5"/>
+
+    <!-- Horizontal grid lines -->
+    <line x1="40" y1="30" x2="255" y2="30" stroke="#4db5ff" stroke-width="0.4" opacity="0.15"/>
+    <line x1="40" y1="60" x2="255" y2="60" stroke="#4db5ff" stroke-width="0.4" opacity="0.15"/>
+    <line x1="40" y1="90" x2="255" y2="90" stroke="#4db5ff" stroke-width="0.4" opacity="0.15"/>
+    <line x1="40" y1="120" x2="255" y2="120" stroke="#4db5ff" stroke-width="0.4" opacity="0.15"/>
+    <line x1="40" y1="150" x2="255" y2="150" stroke="#4db5ff" stroke-width="0.4" opacity="0.15"/>
+
+    <!-- Y-axis labels -->
+    <text x="30" y="34" font-family="monospace" font-size="8" fill="#4db5ff" opacity="0.4" text-anchor="end">100</text>
+    <text x="30" y="64" font-family="monospace" font-size="8" fill="#4db5ff" opacity="0.4" text-anchor="end">75</text>
+    <text x="30" y="94" font-family="monospace" font-size="8" fill="#4db5ff" opacity="0.4" text-anchor="end">50</text>
+    <text x="30" y="124" font-family="monospace" font-size="8" fill="#4db5ff" opacity="0.4" text-anchor="end">25</text>
+    <text x="30" y="154" font-family="monospace" font-size="8" fill="#4db5ff" opacity="0.4" text-anchor="end">0</text>
+
+    <!-- Bar chart -->
+    <rect x="55" y="100" width="22" height="50" rx="3" fill="url(#barGrad)" stroke="#4db5ff" stroke-width="0.6" opacity="0.7"/>
+    <rect x="90" y="70" width="22" height="80" rx="3" fill="url(#barGrad)" stroke="#4db5ff" stroke-width="0.6" opacity="0.8"/>
+    <rect x="125" y="85" width="22" height="65" rx="3" fill="url(#barGrad)" stroke="#4db5ff" stroke-width="0.6" opacity="0.75"/>
+    <rect x="160" y="45" width="22" height="105" rx="3" fill="url(#barGrad)" stroke="#4db5ff" stroke-width="0.6" opacity="0.9"/>
+    <rect x="195" y="55" width="22" height="95" rx="3" fill="url(#barGrad)" stroke="#4db5ff" stroke-width="0.6" opacity="0.85"/>
+    <rect x="230" y="35" width="22" height="115" rx="3" fill="url(#barGrad)" stroke="#4db5ff" stroke-width="0.6"/>
+
+    <!-- Trend line -->
+    <polyline points="66,95 101,65 136,78 171,40 206,48 241,30" fill="none" stroke="#4db5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+
+    <!-- Trend line dots -->
+    <circle cx="66" cy="95" r="3" fill="#4db5ff" opacity="0.9"/>
+    <circle cx="101" cy="65" r="3" fill="#4db5ff" opacity="0.9"/>
+    <circle cx="136" cy="78" r="3" fill="#4db5ff" opacity="0.9"/>
+    <circle cx="171" cy="40" r="3" fill="#4db5ff" opacity="0.9"/>
+    <circle cx="206" cy="48" r="3" fill="#4db5ff" opacity="0.9"/>
+    <circle cx="241" cy="30" r="4" fill="#4db5ff"/>
+
+    <!-- Small KPI indicators -->
+    <g transform="translate(45, 158)">
+      <text font-family="monospace" font-size="7" fill="#4db5ff" opacity="0.35">Jan</text>
+    </g>
+    <g transform="translate(82, 158)">
+      <text font-family="monospace" font-size="7" fill="#4db5ff" opacity="0.35">Feb</text>
+    </g>
+    <g transform="translate(117, 158)">
+      <text font-family="monospace" font-size="7" fill="#4db5ff" opacity="0.35">Mar</text>
+    </g>
+    <g transform="translate(152, 158)">
+      <text font-family="monospace" font-size="7" fill="#4db5ff" opacity="0.35">Apr</text>
+    </g>
+    <g transform="translate(186, 158)">
+      <text font-family="monospace" font-size="7" fill="#4db5ff" opacity="0.35">May</text>
+    </g>
+    <g transform="translate(223, 158)">
+      <text font-family="monospace" font-size="7" fill="#4db5ff" opacity="0.35">Jun</text>
+    </g>
+  </g>
+
+  <!-- Decorative accent line -->
+  <line x1="200" y1="260" x2="400" y2="260" stroke="#4db5ff" stroke-width="1" opacity="0.3"/>
+
+  <!-- Title text -->
+  <text x="300" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="1">Fast Track</text>
+
+  <!-- Subtitle -->
+  <text x="300" y="330" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4db5ff" text-anchor="middle" opacity="0.7" letter-spacing="2">ANALYTICS DASHBOARD</text>
+
+  <!-- Corner accents -->
+  <path d="M12,2 L2,2 L2,12" fill="none" stroke="#4db5ff" stroke-width="1.5" opacity="0.3"/>
+  <path d="M588,2 L598,2 L598,12" fill="none" stroke="#4db5ff" stroke-width="1.5" opacity="0.3"/>
+  <path d="M2,388 L2,398 L12,398" fill="none" stroke="#4db5ff" stroke-width="1.5" opacity="0.3"/>
+  <path d="M598,388 L598,398 L588,398" fill="none" stroke="#4db5ff" stroke-width="1.5" opacity="0.3"/>
+</svg>

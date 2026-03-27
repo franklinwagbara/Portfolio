@@ -1,28 +1,28 @@
 const workHistory = [
   {
     id: 1,
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     company: "Brookstone",
-    responsiblities: [
+    responsibilities: [
       {
         id: 1,
         value:
-          "Led software development initiative as subject matter expert and " +
-          "primary point-of-contact for project management staff.",
+          "Led development of a real-time IoT monitoring platform handling 10K+ concurrent device streams with sub-100ms update latency.",
       },
       {
         id: 2,
-        value: "Orchestrated efficient large-scale software deployments.",
+        value:
+          "Architected microservices migration that improved API response times by 40% and reduced infrastructure costs by 25%.",
       },
       {
         id: 3,
         value:
-          "Authored development progress reports informing internal personnel and external stakeholders of project milestones.",
+          "Mentored 5 junior engineers through code reviews, pair programming, and technical design sessions.",
       },
       {
         id: 4,
         value:
-          "Worked with more than 50 customers for needs analysis, proposal development and vendor costs to produce competitive estimates.",
+          "Implemented CI/CD pipelines reducing deployment time from 2 hours to 15 minutes.",
       },
     ],
   },
@@ -30,21 +30,21 @@ const workHistory = [
     id: 2,
     title: "Software Engineer",
     company: "Dietams",
-    responsiblities: [
+    responsibilities: [
       {
         id: 1,
         value:
-          "Coordinated with other engineers to evaluate and improve software and hardware interfaces.",
+          "Built a ledger-first payment platform with double-entry bookkeeping processing 5K+ daily transactions.",
       },
       {
         id: 2,
         value:
-          "Delivered unit-tested systems with required characteristics and within customer-prescribed timeframes",
+          "Delivered full-stack features using React, TypeScript, and Spring Boot within customer-prescribed timeframes.",
       },
       {
         id: 3,
         value:
-          "Revised, modularized and updated old code bases to modern development standards, reducing operating costs and improving functionality.",
+          "Reduced production bugs by 60% through implementation of comprehensive unit and integration test suites.",
       },
     ],
   },
@@ -52,48 +52,26 @@ const workHistory = [
     id: 3,
     title: "Software Engineer",
     company: "Multichoice Consultant Ltd.",
-    responsiblities: [
+    responsibilities: [
       {
         id: 1,
         value:
-          "Planned and developed interfaces that simplified overall management and offered ease of use.",
+          "Designed and built user-facing dashboards that improved client workflow efficiency by 35%.",
       },
       {
         id: 2,
         value:
-          "Documented technical workflows and knowledge in private wiki for education of newly hired employees.",
+          "Created technical documentation and onboarding materials reducing new hire ramp-up time from 4 weeks to 2.",
       },
       {
         id: 3,
         value:
-          "Designed intuitive graphical user interfaces using knowledge of serial communications and database design to improve user experience.",
+          "Developed RESTful APIs with optimized database queries, cutting average page load time from 3s to under 800ms.",
       },
       {
         id: 4,
         value:
-          "Participated in cross-functional projects while working in lean development environments.",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Software Engineer",
-    company: "Brookstone",
-    responsiblities: [
-      {
-        id: 1,
-        value:
-          "Collaborated effectively with members of software development team and personnel in other departments.",
-      },
-      {
-        id: 2,
-        value:
-          "Prepared and submitted reports and other documentation to assist development team members.",
-      },
-      {
-        id: 3,
-        value:
-          "Collaborated with other developers to identify and alleviate number of bugs and errors in software.",
+          "Collaborated across product, design, and QA teams in agile sprints delivering features bi-weekly.",
       },
     ],
   },

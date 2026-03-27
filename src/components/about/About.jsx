@@ -4,27 +4,33 @@ import { GiMedal } from "react-icons/gi";
 import { BsPeopleFill } from "react-icons/bs";
 import { AiFillProject } from "react-icons/ai";
 
-const About = (props) => {
+const About = () => {
   return (
     <section id="about">
       <div className="about-container">
-        <div className="about-header">
-          <h5>More</h5>
+        <div className="about-header" data-aos="fade-up">
+          <h5>Get To Know</h5>
           <h2>About Me</h2>
         </div>
 
         <div className="about-content">
-          <div className="about-image">
-            <img src={Profile} alt="Profile" />
+          <div className="about-image" data-aos="fade-right">
+            <img src={Profile} alt="Franklin Wagbara" />
           </div>
-          <div className="main-content">
+          <div className="main-content" data-aos="fade-left">
             <Cards />
             <p>
-              Detail-oriented, organized and meticulous employee. Works at fast
-              pace to meet tight deadlines. Enthusiastic team player ready to
-              contribute to company success.
+              Senior Software Engineer with 9+ years of experience designing and
+              building high-performance, scalable web applications. I specialize
+              in React, TypeScript, Node.js, and C#/.NET — from architecting
+              real-time dashboards processing 10K+ concurrent data streams to
+              building ledger-first payment platforms with double-entry
+              bookkeeping. Passionate about clean architecture, performance
+              optimization, and mentoring engineering teams.
             </p>
-            <button className="btn btn-primary">Let's Talk</button>
+            <a href="#contact" className="btn btn-primary">
+              Let's Talk
+            </a>
           </div>
         </div>
       </div>
@@ -44,23 +50,23 @@ export const Card = ({ icon, header, subtitle }) => {
   );
 };
 
-export const Cards = (props) => {
+export const Cards = () => {
   return (
     <div className="cards">
       <Card
         icon={<GiMedal />}
         header={"Experience"}
-        subtitle="4+ Years Working Exp."
+        subtitle="9+ Years in Software Engineering"
       />
       <Card
         icon={<BsPeopleFill />}
-        header={"Clients"}
-        subtitle="100+ Worldwide"
+        header={"Collaboration"}
+        subtitle="Cross-Functional Teams"
       />
       <Card
         icon={<AiFillProject />}
         header={"Projects"}
-        subtitle="50+ Completed"
+        subtitle="Production-Grade Systems"
       />
     </div>
   );

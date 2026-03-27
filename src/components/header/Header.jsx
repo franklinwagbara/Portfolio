@@ -6,11 +6,10 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import CV from "../../assets/cv.PDF";
 
-const Header = (props) => {
+const Header = () => {
   return (
     <header id="home" className="header">
       <HeaderIntro />
@@ -28,29 +27,41 @@ export default Header;
 
 export const HeaderIntro = () => {
   return (
-    <div className="header-intro">
-      <h2>Hello, I'm</h2>
+    <div className="header-intro" data-aos="fade-down">
+      <h5 className="greeting">Hello, I'm</h5>
       <h1>Franklin Wagbara</h1>
-      <h2 className="profession">Software Engineer</h2>
-      <CTA action1={CV} />
+      <h2 className="profession">Senior Software Engineer</h2>
+      <CTA action1={CV} download={true} />
     </div>
   );
 };
 
 export const SocialMedia = () => {
   return (
-    <div className="social-media">
-      <a href="">
+    <div className="social-media" data-aos="fade-right" data-aos-delay="300">
+      <a
+        href="https://www.linkedin.com/in/franklin-wagbara-047a1a45/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="LinkedIn"
+      >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a href="">
-        <FontAwesomeIcon icon={faTwitter} />
-      </a>
-      <a href="">
+      <a
+        href="https://github.com/franklinwagbara"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="">
-        <FontAwesomeIcon icon={faFacebook} />
+      <a
+        href="https://x.com/wagbaraf"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Twitter"
+      >
+        <FontAwesomeIcon icon={faTwitter} />
       </a>
     </div>
   );
@@ -58,8 +69,8 @@ export const SocialMedia = () => {
 
 export const Profile = () => {
   return (
-    <div className="avatar">
-      <img src={Avatar} alt="profile" />
+    <div className="avatar" data-aos="fade-up" data-aos-delay="200">
+      <img src={Avatar} alt="Franklin Wagbara - Senior Software Engineer" />
     </div>
   );
 };

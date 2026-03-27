@@ -10,12 +10,25 @@ const CTA = ({
 }) => {
   return (
     <div className="cta">
-      <a href={action1} className="btn" download={download}>
+      <a
+        href={action1}
+        className="btn"
+        download={download}
+        target="_blank"
+        rel="noreferrer"
+      >
         {label1}
       </a>
-      <a href={action2} className="btn btn-primary">
-        {label2}
-      </a>
+      {action2 && (
+        <a
+          href={action2}
+          className="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {label2}
+        </a>
+      )}
     </div>
   );
 };
@@ -23,9 +36,9 @@ const CTA = ({
 CTA.propTypes = {
   download: PropTypes.bool,
   action1: PropTypes.string.isRequired,
-  action2: PropTypes.string.isRequired,
+  action2: PropTypes.string,
   label1: PropTypes.string.isRequired,
-  label2: PropTypes.string.isRequired,
+  label2: PropTypes.string,
 };
 
 export default CTA;

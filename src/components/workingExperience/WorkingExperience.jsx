@@ -4,8 +4,8 @@ import workHistory from "./../../helper/workHistory";
 const WorkingExperience = () => {
   return (
     <div className="working-experience">
-      <h5>My Working</h5>
-      <h2>Experience</h2>
+      <h5 data-aos="fade-up">My Professional</h5>
+      <h2 data-aos="fade-up">Experience</h2>
       <Roles roles={workHistory} />
     </div>
   );
@@ -15,19 +15,22 @@ export default WorkingExperience;
 export const Roles = ({ roles }) => {
   return (
     <div className="jobs">
-      {roles && roles.map((role) => <Role key={role.id} role={role} />)}
+      {roles &&
+        roles.map((role, index) => (
+          <Role key={role.id} role={role} index={index} />
+        ))}
     </div>
   );
 };
 
-export const Role = ({ role }) => {
+export const Role = ({ role, index }) => {
   return (
-    <div className="role">
+    <div className="role" data-aos="fade-up" data-aos-delay={index * 100}>
       <h3>{role.title}</h3>
       <h5>{role.company}</h5>
       <ul>
-        {role.responsiblities &&
-          role.responsiblities.map((resp) => (
+        {role.responsibilities &&
+          role.responsibilities.map((resp) => (
             <li key={resp.id}>{resp.value}</li>
           ))}
       </ul>

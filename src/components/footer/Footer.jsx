@@ -4,12 +4,11 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Footer = (props) => {
+const Footer = () => {
   return (
-    <section id="footer">
+    <footer id="footer">
       <h1>Franklin Wagbara</h1>
       <nav className="footer__nav">
         <ul>
@@ -35,23 +34,38 @@ const Footer = (props) => {
       </nav>
 
       <div className="footer__social">
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/franklin-wagbara-047a1a45/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a href="">
+        <a
+          href="https://github.com/franklinwagbara"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>{" "}
+        <a
+          href="https://x.com/wagbaraf"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Twitter"
+        >
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Franklin Wagbara. All rights reserved.</small>
+        <small>
+          &copy; {new Date().getFullYear()} Franklin Wagbara. All rights
+          reserved.
+        </small>
       </div>
-    </section>
+    </footer>
   );
 };
 export default Footer;

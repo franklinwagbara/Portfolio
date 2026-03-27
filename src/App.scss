@@ -45,7 +45,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-variant);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
 }
 
 //General Styles
@@ -88,12 +101,12 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary-color) !important;
-  color: var(--bg-color-variant) !important;
+  background: var(--primary-color);
+  color: var(--bg-color-variant);
 
   &:hover {
-    background: transparent !important;
-    color: var(--primary-color) !important;
+    background: transparent;
+    color: var(--primary-color);
     border-color: var(--primary-color-variant);
   }
 }
@@ -111,11 +124,13 @@ h1 {
 
 h5 {
   color: var(--color-light);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h2 {
