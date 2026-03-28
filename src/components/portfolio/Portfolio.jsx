@@ -1,7 +1,7 @@
 import "./Portfolio.scss";
 import CryptoFinder from "../../assets/images/projects/crypto_finder.PNG";
 import PulseGridImg from "../../assets/images/projects/pulsegrid.png";
-import PaymentPlatform from "../../assets/images/projects/payment_platform.svg";
+import WalletProImg from "../../assets/images/projects/walletpro.png";
 import FastTrack from "../../assets/images/projects/fast_track.svg";
 import CTA from "../CTA/CTA";
 
@@ -18,13 +18,13 @@ const projects = [
   },
   {
     id: 2,
-    image: PaymentPlatform,
-    heading: "Payment Platform — Digital Wallet & Ledger System",
+    image: WalletProImg,
+    heading: "WalletPro — Digital Wallet & Ledger System",
     description:
       "Production-ready wallet system with Spring Boot + React featuring ledger-first architecture, double-entry bookkeeping, and cross-currency transfers.",
     tags: ["Java", "Spring Boot", "React", "REST API"],
     gitHub: "https://github.com/franklinwagbara/Payment-Platform",
-    projectURL: "",
+    projectURL: "https://payment-platform-delta.vercel.app/",
   },
   {
     id: 3,
