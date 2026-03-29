@@ -3,6 +3,7 @@ import CryptoFinder from "../../assets/images/projects/crypto_finder.PNG";
 import PulseGridImg from "../../assets/images/projects/pulsegrid.png";
 import WalletProImg from "../../assets/images/projects/walletpro.png";
 import FastTrack from "../../assets/images/projects/fast_track.svg";
+import LinkViewImg from "../../assets/images/projects/linkview.png";
 import CTA from "../CTA/CTA";
 
 const projects = [
@@ -45,6 +46,16 @@ const projects = [
     tags: ["React", "JavaScript", "REST API", "CSS"],
     gitHub: "https://github.com/franklinwagbara/Crypto-finder",
     projectURL: "https://franklin-crypto-finder.netlify.app/",
+  },
+  {
+    id: 5,
+    image: LinkViewImg,
+    heading: "LinkView — WebRTC Remote Viewing Platform",
+    description:
+      "Real-time remote viewing platform powered by WebRTC with dynamic TURN credentials, comprehensive ICE diagnostics, and peer-to-peer streaming.",
+    tags: ["Next.js", "TypeScript", "WebRTC", "Tailwind CSS"],
+    gitHub: "https://github.com/franklinwagbara/LinkView",
+    projectURL: "https://linkview-23tk.onrender.com/",
   },
 ];
 
