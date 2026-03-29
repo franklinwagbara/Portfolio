@@ -19,6 +19,16 @@ const projects = [
   },
   {
     id: 2,
+    image: LinkViewImg,
+    heading: "LinkView — WebRTC Remote Viewing Platform",
+    description:
+      "Real-time remote viewing platform powered by WebRTC with dynamic TURN credentials, comprehensive ICE diagnostics, and peer-to-peer streaming.",
+    tags: ["Next.js", "TypeScript", "WebRTC", "Tailwind CSS"],
+    gitHub: "https://github.com/franklinwagbara/LinkView",
+    projectURL: "https://linkview-23tk.onrender.com/",
+  },
+  {
+    id: 3,
     image: WalletProImg,
     heading: "WalletPro — Digital Wallet & Ledger System",
     description:
@@ -26,16 +36,6 @@ const projects = [
     tags: ["Java", "Spring Boot", "React", "REST API"],
     gitHub: "https://github.com/franklinwagbara/Payment-Platform",
     projectURL: "https://payment-platform-delta.vercel.app/",
-  },
-  {
-    id: 3,
-    image: FastTrack,
-    heading: "Fast Track — Executive Diagnostic Dashboard",
-    description:
-      "Modern diagnostic dashboard with React + TypeScript frontend and Node.js backend, featuring glassmorphism UI and real-time analytics.",
-    tags: ["React", "TypeScript", "Node.js", "Express"],
-    gitHub: "https://github.com/franklinwagbara/Fast-Track",
-    projectURL: "",
   },
   {
     id: 4,
@@ -49,13 +49,13 @@ const projects = [
   },
   {
     id: 5,
-    image: LinkViewImg,
-    heading: "LinkView — WebRTC Remote Viewing Platform",
+    image: FastTrack,
+    heading: "Fast Track — Executive Diagnostic Dashboard",
     description:
-      "Real-time remote viewing platform powered by WebRTC with dynamic TURN credentials, comprehensive ICE diagnostics, and peer-to-peer streaming.",
-    tags: ["Next.js", "TypeScript", "WebRTC", "Tailwind CSS"],
-    gitHub: "https://github.com/franklinwagbara/LinkView",
-    projectURL: "https://linkview-23tk.onrender.com/",
+      "Modern diagnostic dashboard with React + TypeScript frontend and Node.js backend, featuring glassmorphism UI and real-time analytics.",
+    tags: ["React", "TypeScript", "Node.js", "Express"],
+    gitHub: "https://github.com/franklinwagbara/Fast-Track",
+    projectURL: "",
   },
 ];
 
