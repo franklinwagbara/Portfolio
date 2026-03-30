@@ -4,54 +4,96 @@
 }
 
 .jobs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding-left: 2rem;
+
+  // Timeline line
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--primary-color),
+      var(--primary-color-variant),
+      transparent
+    );
+  }
 }
 
 .role {
+  position: relative;
+  text-align: left;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
   border: 1px solid var(--primary-color-variant);
-  width: calc(var(--card-size) * 2);
-  padding: 2rem;
-  margin-top: 1.5rem;
-  min-height: calc(var(--card-size) * 2.5);
-  max-height: fit-content;
-  border-radius: var(--button-border-radius);
+  border-radius: 10px;
   transition: var(--transition);
 
+  // Timeline dot
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2.55rem;
+    top: 1.8rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 2px solid var(--bg-color);
+  }
+
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
   }
 
+  h5 {
+    font-size: 0.8rem;
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
+  }
+
   ul {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     text-align: left;
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
   }
 
   ul li {
-    margin-top: 0.6rem;
+    margin-top: 0.5rem;
     display: list-item;
     list-style-position: outside;
     list-style-type: square;
     font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--color-light);
   }
 
   &:hover {
     background: var(--bg-color-variant);
-  }
-}
-
-/////MEDIA QUERIES //////////////
-@media screen and (max-width: 900px) {
-  .jobs {
-    grid-template-columns: 1fr;
+    border-color: var(--primary-color);
+    transform: translateX(5px);
   }
 }
 
 @media screen and (max-width: 640px) {
+  .jobs {
+    padding-left: 1.5rem;
+  }
+
   .role {
-    width: fit-content;
+    padding: 1.2rem 1rem;
+
+    &::before {
+      left: -2.05rem;
+      width: 10px;
+      height: 10px;
+    }
   }
 }

@@ -65,36 +65,33 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   justify-items: stretch;
-  align-items: space-between;
+  align-items: stretch;
 
   .card {
     background-color: var(--bg-color-variant);
-    border-radius: var(--button-border-radius);
+    border-radius: 10px;
     transition: var(--transition);
-    border: 2px solid var(--bg-color-variant);
-    //width: var(--card-size);
-    width: inherit;
-    //height: var(--card-size);
-    height: inherit;
+    border: 1px solid transparent;
     display: flex;
-    aspect-ratio: 1/1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1.5rem 0.5rem;
 
     & :not(style):first-child {
       color: var(--primary-color);
-      margin: 1rem;
+      margin-bottom: 0.8rem;
       font-size: 1.4rem;
     }
 
     p {
       color: var(--color-white);
-      line-height: 2.7;
-      white-space: wrap;
+      line-height: 1.8;
+      white-space: nowrap;
+      font-size: 0.85rem;
     }
     p:last-child {
       color: var(--color-light);
@@ -102,31 +99,22 @@
     }
 
     &:hover {
-      background-color: var(--bg-color);
-      border: 2px solid var(--bg-color-variant);
-    }
-
-    @media screen and (max-width: 1350px) {
-      //width: calc(var(--card-size) * 0.9);
-      //height: calc(var(--card-size) * 0.9);
-      width: inherit;
-      height: inherit;
-      aspect-ratio: 1/1;
-    }
-
-    @media screen and (max-width: 1300px) {
-      //width: calc(var(--card-size) * 0.7);
-      //height: calc(var(--card-size) * 0.7);
-      width: inherit;
-      height: inherit;
-      aspect-ratio: 1/1;
+      background-color: transparent;
+      border-color: var(--primary-color-variant);
+      transform: translateY(-3px);
     }
   }
+
   @media screen and (max-width: 895px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+    .card p {
+      font-size: 0.75rem;
+    }
   }
 }

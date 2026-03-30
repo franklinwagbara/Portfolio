@@ -15,6 +15,7 @@ import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Education from "./components/education/Education";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 
 export default function App() {
@@ -54,6 +55,7 @@ export default function App() {
           </Navbar>
           <About />
           <Experience />
+          <Education />
           <Services />
           <Portfolio />
           <Contact />

@@ -30,7 +30,9 @@ export const HeaderIntro = () => {
     <div className="header-intro" data-aos="fade-down">
       <h5 className="greeting">Hello, I'm</h5>
       <h1>Franklin Wagbara</h1>
-      <h2 className="profession">Senior Software Engineer</h2>
+      <h2 className="profession">
+        Senior Software Engineer &bull; Technical Lead
+      </h2>
       <CTA action1={CV} download={true} />
     </div>
   );
@@ -70,7 +72,10 @@ export const SocialMedia = () => {
 export const Profile = () => {
   return (
     <div className="avatar" data-aos="fade-up" data-aos-delay="200">
-      <img src={Avatar} alt="Franklin Wagbara - Senior Software Engineer" />
+      <img
+        src={Avatar}
+        alt="Franklin Wagbara - Senior Software Engineer & Technical Lead"
+      />
     </div>
   );
 };
