@@ -7,22 +7,17 @@ const workHistory = [
       {
         id: 1,
         value:
-          "Driving improvements to the performance, scalability, and reliability of a multi-tenant enterprise platform built on microservices, microfrontend, and event-driven architectures.",
+          "Identified and resolved a latency-critical bottleneck in a multi-tenant enterprise platform, achieving an 80%+ reduction in p99 latency for a high-traffic feature under stringent SLA requirements.",
       },
       {
         id: 2,
         value:
-          "Led the optimization of a high-traffic, latency-critical feature, achieving an 80%+ reduction in latency and significant overall performance gains.",
+          "Designed microfrontend integration patterns enabling independent team deployments, reducing release coordination overhead and improving frontend build times.",
       },
       {
         id: 3,
         value:
-          "Recognized by engineering leadership for delivering a measurable improvement to a business-critical feature with stringent performance requirements.",
-      },
-      {
-        id: 4,
-        value:
-          "Designed and refined microfrontend integration patterns enabling independent deployment and improved frontend performance at scale.",
+          "Recognized by engineering leadership for delivering measurable performance gains on a business-critical feature — work that directly unblocked a product milestone.",
       },
     ],
   },
@@ -34,22 +29,17 @@ const workHistory = [
       {
         id: 1,
         value:
-          "Contracted to contribute to the training and refinement of Gemini 2.5 Pro, specializing in C#, .NET Core internals, and React-based frontend engineering.",
+          "Contracted to evaluate and improve Gemini 2.5 Pro's code generation quality, specializing in .NET Core internals (async/await, threading, memory management) and modern React patterns.",
       },
       {
         id: 2,
         value:
-          "Provided expert-level guidance and validation for model outputs related to .NET runtime behavior, async/await, threading, memory management, and modern React patterns.",
+          "Identified classes of hallucinations and anti-patterns in model output that would have caused production failures — flawed async patterns, incorrect DI lifetimes, and React component anti-patterns.",
       },
       {
         id: 3,
         value:
-          "Identified hallucinations, flawed abstractions, and anti-patterns in both backend and frontend outputs, significantly improving consistency and reliability.",
-      },
-      {
-        id: 4,
-        value:
-          "Designed real-world prompts, reference implementations, and edge-case test cases covering enterprise-grade React component architecture and .NET services.",
+          "Designed real-world prompts, reference implementations, and edge-case test cases that measurably improved the model's consistency and reliability for enterprise-grade code generation.",
       },
     ],
   },
@@ -61,49 +51,39 @@ const workHistory = [
       {
         id: 1,
         value:
-          "Led a cross-functional team of 8 engineers in the end-to-end modernization and re-architecture of a legacy banking infrastructure supporting critical financial operations.",
+          "Led 8 engineers through a 12-month modernization of a legacy banking platform. Replaced synchronous processing bottlenecks with event-driven architecture, cutting transaction latency by 40%+ and improving throughput by 30%+.",
       },
       {
         id: 2,
         value:
-          "Re-architected monolithic systems into scalable, high-performance components, significantly improving system resilience and deployment velocity.",
+          "Argued against a full rewrite in favor of targeted architectural changes — a decision that kept the system in production during migration with zero incidents attributable to the transition.",
       },
       {
         id: 3,
         value:
-          "Delivered over 30% improvement in transaction throughput by optimizing service boundaries, data flows, and asynchronous processing.",
-      },
-      {
-        id: 4,
-        value:
-          "Achieved 40%+ reduction in system latency through performance tuning, improved API design, and infrastructure-level optimizations.",
+          "Wrote Architecture Decision Records for each major design choice, creating a decision trail that onboarded 3 new engineers in half the usual ramp-up time.",
       },
     ],
   },
   {
     id: 4,
     title: "Lead Software Engineer",
-    company: "FCMB (First City Monument Bank) — Abuja (01/2024 – 12/2024)",
+    company: "FCMB (First City Monument Bank) — Abuja (01/2024 – 12/2024, concurrent contract)",
     responsibilities: [
       {
         id: 1,
         value:
-          "Spearheaded the design and architecture of a microservices-driven application using event-driven principles with C#, ASP.NET, and .NET Core.",
+          "Architected a microservices-driven banking application using C#, ASP.NET, and event-driven patterns, deployed across Azure infrastructure.",
       },
       {
         id: 2,
         value:
-          "Leveraged AI-powered tools including GitHub Copilot to streamline code generation, improving developer productivity by 30%.",
+          "Integrated GitHub Copilot into the team's workflow with validation guardrails, improving developer throughput by 30% while maintaining code quality across 500K+ LOC.",
       },
       {
         id: 3,
         value:
-          "Led validation and refinement of AI-generated code, ensuring alignment with industry standards across large codebases (500K+ LOC).",
-      },
-      {
-        id: 4,
-        value:
-          "Coordinated with DevOps and Infrastructure teams to ensure successful deployments using Azure DevOps, Web Services, and AWS.",
+          "Established AI-generated code review protocols — trained the team to catch Copilot anti-patterns, reducing post-merge defects in AI-assisted code by a measurable margin.",
       },
     ],
   },
@@ -115,22 +95,12 @@ const workHistory = [
       {
         id: 1,
         value:
-          "Directed a cross-functional team developing AI-integrated backend components to support scalable, API-centric infrastructures using C#, .NET Core, Angular, and React.",
+          "Designed and shipped payment gateway systems for clients using C#, .NET Core, Angular, and React — handling real money movement with PCI-compliant architecture.",
       },
       {
         id: 2,
         value:
-          "Designed, developed, and maintained payment gateway systems for clients.",
-      },
-      {
-        id: 3,
-        value:
-          "Contributed to LLM training efforts, incorporating AI models for code generation, error handling, and automatic documentation generation.",
-      },
-      {
-        id: 4,
-        value:
-          "Championed code-creation technologies, enabling faster prototyping and reducing errors through automated quality checks and AI-assisted refactoring.",
+          "Introduced AI-assisted development tools that reduced prototyping time and caught integration errors earlier in the development cycle.",
       },
     ],
   },
@@ -142,22 +112,17 @@ const workHistory = [
       {
         id: 1,
         value:
-          "Led multiple large-scale projects and conducted extensive code reviews, maintaining adherence to industry standards across C#, .NET Core, React, Angular.",
+          "Wrote the core framework code that subsequent developers consistently built upon — maintained through multiple team turnovers over 3 years.",
       },
       {
         id: 2,
         value:
-          "Wrote highly maintainable code forming core framework, earning consistent praise from subsequent developers since initial version.",
+          "Conducted needs analysis for 50+ customers, translating business requirements into technical proposals and vendor cost estimates.",
       },
       {
         id: 3,
         value:
-          "Worked with 50+ customers for needs analysis, proposal development, and vendor cost estimation.",
-      },
-      {
-        id: 4,
-        value:
-          "Trained and mentored team members, emphasizing quality and adherence to best practices across multiple languages and frameworks.",
+          "Mentored junior and mid-level engineers across C#, .NET Core, React, and Angular, establishing team code review standards.",
       },
     ],
   },

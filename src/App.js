@@ -2,16 +2,17 @@ import { useEffect } from "react";
 import "./App.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SEO from "./components/SEO/SEO";
 import Header from "./components/header/Header";
 import Navbar, { NavItem } from "./components/navbar/Navbar";
 import { HiOutlineHome, HiOutlineBriefcase } from "react-icons/hi";
 import { FiUser } from "react-icons/fi";
 import { BsJournalBookmark } from "react-icons/bs";
 import { MdOutlineContactPhone } from "react-icons/md";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { VscNotebook } from "react-icons/vsc";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
-import Services from "./components/services/Services";
+import CaseStudies from "./components/caseStudies/CaseStudies";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -30,6 +31,7 @@ export default function App() {
 
   return (
     <ErrorBoundary>
+      <SEO />
       <div className="App">
         <div className="container">
           <Header />
@@ -43,8 +45,8 @@ export default function App() {
             <NavItem name="experience" url="#experience">
               <BsJournalBookmark />
             </NavItem>
-            <NavItem name="services" url="#services">
-              <MdOutlineMiscellaneousServices />
+            <NavItem name="case-studies" url="#case-studies">
+              <VscNotebook />
             </NavItem>
             <NavItem name="portfolio" url="#portfolio">
               <HiOutlineBriefcase />
@@ -56,7 +58,7 @@ export default function App() {
           <About />
           <Experience />
           <Education />
-          <Services />
+          <CaseStudies />
           <Portfolio />
           <Contact />
         </div>

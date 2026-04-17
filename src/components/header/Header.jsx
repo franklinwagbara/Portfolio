@@ -28,12 +28,27 @@ export default Header;
 export const HeaderIntro = () => {
   return (
     <div className="header-intro" data-aos="fade-down">
-      <h5 className="greeting">Hello, I'm</h5>
+      <p className="availability">
+        Available for remote senior roles &middot; Lagos (GMT+1)
+      </p>
       <h1>Franklin Wagbara</h1>
       <h2 className="profession">
-        Senior Software Engineer &bull; Technical Lead
+        I make legacy .NET banking platforms faster
+        <br />
+        and help LLMs ship production-grade code.
       </h2>
-      <CTA action1={CV} download={true} />
+      <p className="hero-summary">
+        9 years building enterprise backends &middot; Gemini 2.5 Pro training
+        contributor &middot; Shipped for FCMB, EPS Vilnius, and multi-tenant
+        SaaS
+      </p>
+      <CTA
+        action1={CV}
+        download={true}
+        label1="Download CV"
+        label2="Book a 20-min Call"
+        action2="#contact"
+      />
     </div>
   );
 };

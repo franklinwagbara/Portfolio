@@ -20,25 +20,35 @@ const About = () => {
           <div className="main-content" data-aos="fade-left">
             <Cards />
             <p>
-              Senior Software Engineer and Technical Lead with 9+ years of
-              experience, including 6+ years in senior leadership roles,
-              delivering high-performance, enterprise-grade systems across
-              banking, fintech, and SaaS domains. Specialized for 8+ years in
-              C#, ASP.NET, and .NET Core, with strong full-stack expertise in
-              React, Angular, Node.js, TypeScript, and JavaScript.
+              I'm Franklin. For nine years I've built the systems you don't
+              usually see&mdash;the .NET backends moving money through Nigerian
+              banks, the microservices keeping SaaS platforms upright at scale,
+              and the microfrontend integrations nobody wants to touch twice.
             </p>
             <p>
-              Proven leader of cross-functional engineering teams, driving 30%+
-              throughput improvements, 40%+ latency reductions, and 80%+
-              performance gains on business-critical features through system
-              modernization and architectural optimization. Experienced in
-              training and fine-tuning large language models
-              (LLMs)&mdash;including contributions to Gemini 2.5 Pro&mdash;to
-              improve the accuracy and production readiness of AI-generated
-              solutions.
+              Most recently at EPS (Vilnius), I led a team of 8 engineers
+              re-architecting a legacy banking infrastructure that supported
+              critical financial operations. We cut transaction latency by
+              {/* TODO: replace with actual % */} 40%+ and improved throughput
+              by 30%+, unblocking key product milestones.
+            </p>
+            <p>
+              Before that, I spent five months contributing to the training of
+              Gemini 2.5 Pro through Turing&mdash;specifically catching
+              hallucinations and anti-patterns in .NET and React output. That
+              work is now in a model millions of developers use daily.
+            </p>
+            <p>
+              I care most about three things: performance work that shows up in
+              real P&amp;L numbers, codebases future engineers can actually
+              maintain, and using AI as a force multiplier instead of a crutch.
+            </p>
+            <p className="about-location">
+              Based in Lagos, working GMT+1, open to remote senior IC roles
+              globally.
             </p>
             <a href="#contact" className="btn btn-primary">
-              Let's Talk
+              Book a 20-min Call
             </a>
           </div>
         </div>
@@ -70,7 +80,7 @@ export const Cards = () => {
       <Card
         icon={<BsPeopleFill />}
         header={"Leadership"}
-        subtitle="Cross-Functional Teams"
+        subtitle="Led teams of 8+ engineers"
       />
       <Card
         icon={<AiOutlineRobot />}

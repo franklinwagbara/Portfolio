@@ -4,7 +4,7 @@ import { PropTypes } from "prop-types";
 const CTA = ({
   download = false,
   label1 = "Download CV",
-  label2 = "Let's Talk",
+  label2 = "Book a 20-min Call",
   action1 = "",
   action2 = "#contact",
 }) => {

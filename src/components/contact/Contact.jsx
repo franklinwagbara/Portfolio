@@ -1,7 +1,6 @@
 import "./Contact.scss";
 import { AiOutlineMail } from "react-icons/ai";
-import { FiPhone } from "react-icons/fi";
-import { BsWhatsapp } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -54,21 +53,15 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <FiPhone />
-            <h3>Phone</h3>
-            <h4>+2348144778023</h4>
-            <a href="tel:+2348144778023">Place a phone call</a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp />
-            <h3>WhatsApp</h3>
-            <h4>+2348144778023</h4>
+            <FaLinkedin />
+            <h3>LinkedIn</h3>
+            <h4>Franklin Wagbara</h4>
             <a
-              href="https://api.whatsapp.com/send?phone=2348144778023"
+              href="https://www.linkedin.com/in/franklin-wagbara-047a1a45/"
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              Connect on LinkedIn
             </a>
           </article>
         </div>
