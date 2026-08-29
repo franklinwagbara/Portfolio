@@ -65,9 +65,7 @@ export default function SEO() {
       <meta name="twitter:image" content={ogImage} />
 
       {/* JSON-LD Person schema */}
-      <script type="application/ld+json">
-        {JSON.stringify(personSchema)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
     </Helmet>
   );
 }

@@ -23,7 +23,7 @@ const workHistory = [
   },
   {
     id: 2,
-    title: "Senior Software Engineer (Contract)",
+    title: "Senior Software Engineer (Concurrent Contract)",
     company: "Turing.com — Palo Alto, CA (11/2024 – 04/2025)",
     responsibilities: [
       {
@@ -68,7 +68,8 @@ const workHistory = [
   {
     id: 4,
     title: "Lead Software Engineer",
-    company: "FCMB (First City Monument Bank) — Abuja (01/2024 – 12/2024, concurrent contract)",
+    company:
+      "FCMB (First City Monument Bank) — Abuja (01/2024 – 12/2024, concurrent contract)",
     responsibilities: [
       {
         id: 1,

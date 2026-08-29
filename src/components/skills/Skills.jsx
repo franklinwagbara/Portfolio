@@ -7,7 +7,11 @@ const coreStack = [
   { id: 3, skill: "TypeScript", years: "5+ yrs production" },
   { id: 4, skill: "Node.js / Express", years: "5+ yrs production" },
   { id: 5, skill: "PostgreSQL / MSSQL", years: "7+ yrs production" },
-  { id: 6, skill: "Microservices & Event-Driven Architecture", years: "5+ yrs production" },
+  {
+    id: 6,
+    skill: "Microservices & Event-Driven Architecture",
+    years: "5+ yrs production",
+  },
 ];
 
 const alsoComfortableWith = [
@@ -43,11 +47,17 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="skill-group skill-group--also" data-aos="fade-up" data-aos-delay="100">
+        <div
+          className="skill-group skill-group--also"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <h3>Also Comfortable With</h3>
           <div className="skill-tags">
             {alsoComfortableWith.map((tech) => (
-              <span key={tech} className="skill-tag">{tech}</span>
+              <span key={tech} className="skill-tag">
+                {tech}
+              </span>
             ))}
           </div>
         </div>

@@ -18,6 +18,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Education from "./components/education/Education";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
+import { CASE_STUDIES_READY } from "./config";
 
 export default function App() {
   useEffect(() => {
@@ -45,9 +46,11 @@ export default function App() {
             <NavItem name="experience" url="#experience">
               <BsJournalBookmark />
             </NavItem>
-            <NavItem name="case-studies" url="#case-studies">
-              <VscNotebook />
-            </NavItem>
+            {CASE_STUDIES_READY && (
+              <NavItem name="case-studies" url="#case-studies">
+                <VscNotebook />
+              </NavItem>
+            )}
             <NavItem name="portfolio" url="#portfolio">
               <HiOutlineBriefcase />
             </NavItem>

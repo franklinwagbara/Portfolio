@@ -5,6 +5,7 @@ import {
   faGithub,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { CASE_STUDIES_READY } from "../../config";
 
 const Footer = () => {
   return (
@@ -21,9 +22,11 @@ const Footer = () => {
           <li>
             <a href="#experience">Experience</a>
           </li>
-          <li>
-            <a href="#case-studies">Case Studies</a>
-          </li>
+          {CASE_STUDIES_READY && (
+            <li>
+              <a href="#case-studies">Case Studies</a>
+            </li>
+          )}
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
