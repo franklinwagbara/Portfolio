@@ -6,7 +6,6 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import CV from "../../assets/cv.PDF";
 
@@ -31,7 +30,13 @@ export const HeaderIntro = () => {
     <div className="header-intro">
       <h2>Hello, I'm</h2>
       <h1>Franklin Wagbara</h1>
-      <h2 className="profession">Software Engineer</h2>
+      <h2 className="profession">
+        Senior Software Engineer &amp; Technical Lead
+      </h2>
+      <p className="tagline">
+        9+ years building high-performance backend systems and AI-powered
+        products across banking, fintech and SaaS.
+      </p>
       <CTA action1={CV} />
     </div>
   );
@@ -40,17 +45,29 @@ export const HeaderIntro = () => {
 export const SocialMedia = () => {
   return (
     <div className="social-media">
-      <a href="">
+      <a
+        href="https://www.linkedin.com/in/franklin-wagbara"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="LinkedIn"
+      >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a href="">
-        <FontAwesomeIcon icon={faTwitter} />
-      </a>
-      <a href="">
+      <a
+        href="https://github.com/franklinwagbara"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="">
-        <FontAwesomeIcon icon={faFacebook} />
+      <a
+        href="https://x.com/franklinwagbara"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="X"
+      >
+        <FontAwesomeIcon icon={faTwitter} />
       </a>
     </div>
   );
@@ -59,7 +76,7 @@ export const SocialMedia = () => {
 export const Profile = () => {
   return (
     <div className="avatar">
-      <img src={Avatar} alt="profile" />
+      <img src={Avatar} alt="Franklin Wagbara" />
     </div>
   );
 };

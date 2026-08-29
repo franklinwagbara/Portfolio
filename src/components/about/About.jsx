@@ -15,16 +15,42 @@ const About = (props) => {
 
         <div className="about-content">
           <div className="about-image">
-            <img src={Profile} alt="Profile" />
+            <img src={Profile} alt="Franklin Wagbara" />
           </div>
           <div className="main-content">
             <Cards />
             <p>
-              Detail-oriented, organized and meticulous employee. Works at fast
-              pace to meet tight deadlines. Enthusiastic team player ready to
-              contribute to company success.
+              I'm a Senior Software Engineer and Technical Lead with 9+ years of
+              experience — including 6+ in senior leadership — delivering
+              high-performance, enterprise-grade systems across banking, fintech
+              and SaaS. I specialize in Node.js, TypeScript and PostgreSQL
+              alongside deep C#/.NET Core expertise, designing event-driven
+              microservices built for high transaction volumes and concurrency
+              under load.
             </p>
-            <button className="btn btn-primary">Let's Talk</button>
+            <p>
+              On the AI side, I've contributed to the training and refinement of
+              large language models — including Gemini 2.5 Pro — and I build
+              LLM-powered features into production systems. I'm currently
+              building{" "}
+              <a
+                href="https://www.elevareapp.net"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Elevare
+              </a>
+              , an AI career companion launching shortly.
+            </p>
+            <p>
+              Across my last three roles I've delivered 80%+ latency reductions,
+              30%+ throughput gains and led cross-functional teams through
+              full-platform modernizations — always with measurable baselines to
+              prove the impact.
+            </p>
+            <a className="btn btn-primary about-cta" href="#contact">
+              Let's Talk
+            </a>
           </div>
         </div>
       </div>
@@ -50,17 +76,17 @@ export const Cards = (props) => {
       <Card
         icon={<GiMedal />}
         header={"Experience"}
-        subtitle="4+ Years Working Exp."
+        subtitle="9+ Years, 6+ Senior/Lead"
       />
       <Card
         icon={<BsPeopleFill />}
-        header={"Clients"}
-        subtitle="100+ Worldwide"
+        header={"Leadership"}
+        subtitle="Teams of 8+ Engineers Led"
       />
       <Card
         icon={<AiFillProject />}
-        header={"Projects"}
-        subtitle="50+ Completed"
+        header={"Impact"}
+        subtitle="80%+ Latency Reduction"
       />
     </div>
   );

@@ -31,15 +31,15 @@ const Contact = (props) => {
   };
   return (
     <section id="contact">
-      <h5>My</h5>
-      <h2>Projects</h2>
+      <h5>Get In Touch</h5>
+      <h2>Contact Me</h2>
 
       <div className="contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <AiOutlineMail />
             <h3>Email</h3>
-            <h4>wagbara@gmail.com</h4>
+            <h4>wagbarafranklin1@gmail.com</h4>
             <a
               href="mailto:wagbarafranklin1@gmail.com"
               target="_blank"
@@ -52,14 +52,14 @@ const Contact = (props) => {
             <FiPhone />
             <h3>Phone</h3>
             <h4>+2348144778023</h4>
-            <p>Place a phone call</p>
+            <a href="tel:+2348144778023">Place a phone call</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp />
             <h3>WhatsApp</h3>
             <h4>+2348144778023</h4>
             <a
-              href="https://api.whatsapp.com/send?phone+2348144778023"
+              href="https://api.whatsapp.com/send?phone=2348144778023"
               target="_blank"
               rel="noreferrer"
             >

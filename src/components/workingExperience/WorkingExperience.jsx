@@ -24,10 +24,13 @@ export const Role = ({ role }) => {
   return (
     <div className="role">
       <h3>{role.title}</h3>
-      <h5>{role.company}</h5>
+      <h5 className="role__company">
+        {role.company} &middot; {role.location}
+      </h5>
+      <h5 className="role__period">{role.period}</h5>
       <ul>
-        {role.responsiblities &&
-          role.responsiblities.map((resp) => (
+        {role.responsibilities &&
+          role.responsibilities.map((resp) => (
             <li key={resp.id}>{resp.value}</li>
           ))}
       </ul>

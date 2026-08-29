@@ -24,6 +24,14 @@
       color: var(--color-light);
     }
 
+    .tagline {
+      color: var(--color-light);
+      font-size: 0.85rem;
+      max-width: 34rem;
+      text-align: center;
+      margin: 0.8rem 0 0.4rem;
+    }
+
     @media screen and (max-width: 640px) {
       h1 {
         word-wrap: break-word;

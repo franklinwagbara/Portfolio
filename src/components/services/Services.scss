@@ -22,10 +22,12 @@
   & > div {
     background: var(--primary-color);
     color: var(--bg-color);
-    height: 4rem;
+    min-height: 4rem;
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
@@ -37,6 +39,12 @@
     div {
       display: flex;
       gap: 1rem;
+
+      & > :first-child {
+        flex-shrink: 0;
+        margin-top: 0.45rem;
+      }
+
       p {
         display: inline-block;
         font-size: 0.8rem;

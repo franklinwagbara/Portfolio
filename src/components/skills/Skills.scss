@@ -5,12 +5,11 @@
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin: 1rem 2rem;
 
-  .backend,
-  .frontend {
+  .skill-group {
     border: 1px solid var(--bg-color-variant);
     border-radius: var(--button-border-radius);
     background: var(--bg-color-variant);
@@ -24,6 +23,7 @@
     & > h2 {
       grid-column: 1 / span 2;
       margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
 
     &:hover {
@@ -41,13 +41,11 @@
     gap: 0.7rem;
   }
 
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
 
-    .backend,
-    .frontend {
+    .skill-group {
       padding: 2rem 0.5rem;
-      font-size: 0.4rem;
     }
   }
 }
@@ -61,7 +59,8 @@
   & > :first-child {
     color: var(--primary-color);
     display: inline;
+    flex-shrink: 0;
     margin-top: 8px;
-    margin-right: 1rem;
+    margin-right: 0.7rem;
   }
 }

@@ -4,7 +4,6 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = (props) => {
@@ -35,18 +34,30 @@ const Footer = (props) => {
       </nav>
 
       <div className="footer__social">
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/franklin-wagbara"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a href="">
+        <a
+          href="https://github.com/franklinwagbara"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>{" "}
+        <a
+          href="https://x.com/franklinwagbara"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="X"
+        >
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
       </div>
       <div className="footer__copyright">
         <small>&copy; Franklin Wagbara. All rights reserved.</small>
