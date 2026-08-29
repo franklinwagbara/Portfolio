@@ -50,6 +50,16 @@
       flex-direction: column;
       justify-content: space-between;
       max-width: 100%;
+
+      p a {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color-variant);
+        transition: var(--transition);
+
+        &:hover {
+          border-bottom-color: var(--primary-color);
+        }
+      }
     }
 
     @media screen and (max-width: 895px) {

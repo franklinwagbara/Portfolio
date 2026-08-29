@@ -7,7 +7,7 @@ import {
   faGithub,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/cv.PDF";
 
 const Header = () => {
   return (

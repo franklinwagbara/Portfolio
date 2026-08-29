@@ -1,4 +1,5 @@
 import "./Portfolio.scss";
+import ElevareImg from "../../assets/images/projects/elevare.jpg";
 import CryptoFinder from "../../assets/images/projects/crypto_finder.PNG";
 import PulseGridImg from "../../assets/images/projects/pulsegrid.png";
 import WalletProImg from "../../assets/images/projects/walletpro.png";
@@ -9,6 +10,18 @@ import CTA from "../CTA/CTA";
 const projects = [
   {
     id: 1,
+    image: ElevareImg,
+    badge: "Launching Soon",
+    heading: "Elevare — AI-Powered Career Companion",
+    description:
+      "AI career companion that generates and optimizes resumes, builds skill-gap roadmaps, and tracks every application from applied to offer — with a Chrome extension that auto-detects jobs across LinkedIn, Indeed, Greenhouse, and Lever.",
+    tags: ["Next.js 15", ".NET 9", "PostgreSQL", "Azure OpenAI"],
+    gitHub: "https://github.com/franklinwagbara/Elevare",
+    projectURL: "https://www.elevareapp.net",
+    label2: "Visit Site",
+  },
+  {
+    id: 2,
     image: PulseGridImg,
     heading: "PulseGrid — Real-Time IoT Monitoring Dashboard",
     description:
@@ -18,7 +31,7 @@ const projects = [
     projectURL: "https://resilient-crepe-13d95e.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: LinkViewImg,
     heading: "LinkView — WebRTC Remote Viewing Platform",
     description:
@@ -28,7 +41,7 @@ const projects = [
     projectURL: "https://linkview-23tk.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     image: WalletProImg,
     heading: "WalletPro — Digital Wallet & Ledger System",
     description:
@@ -38,7 +51,7 @@ const projects = [
     projectURL: "https://payment-platform-delta.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     image: CryptoFinder,
     heading: "Crypto Finder — Cryptocurrency Tracker",
     description:
@@ -48,7 +61,7 @@ const projects = [
     projectURL: "https://franklin-crypto-finder.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: FastTrack,
     heading: "Fast Track — Executive Diagnostic Dashboard",
     description:
@@ -89,6 +102,9 @@ const Project = ({ project, index }) => {
     >
       <div className="project__image">
         <img src={project.image} alt={project.heading} />
+        {project.badge && (
+          <span className="project__badge">{project.badge}</span>
+        )}
       </div>
       <div className="info__wrapper">
         <h3>{project.heading}</h3>
@@ -103,7 +119,7 @@ const Project = ({ project, index }) => {
         <CTA
           download={false}
           label1="GitHub"
-          label2="Live Demo"
+          label2={project.label2 || "Live Demo"}
           action1={project.gitHub}
           action2={project.projectURL}
         />
