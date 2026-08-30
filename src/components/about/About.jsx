@@ -39,6 +39,16 @@ const About = () => {
               work is now in a model millions of developers use daily.
             </p>
             <p>
+              Right now I'm shipping{" "}
+              <a href="https://www.elevareapp.net" target="_blank" rel="noreferrer">
+                Elevare
+              </a>
+              , an AI career companion I've built end to end&mdash;.NET 9 and
+              PostgreSQL underneath, Next.js on top, and an LLM layer that
+              rewrites resumes against a specific job rather than generating
+              generic filler. It launches shortly.
+            </p>
+            <p>
               I care most about three things: performance work that shows up in
               real P&amp;L numbers, codebases future engineers can actually
               maintain, and using AI as a force multiplier instead of a crutch.
