@@ -46,12 +46,12 @@ const workHistory = [
   {
     id: 3,
     title: "Lead Software Engineer",
-    company: "EPS — Vilnius (01/2024 – 12/2024)",
+    company: "EPS — Fintech · Vilnius, Lithuania (01/2024 – 12/2024)",
     responsibilities: [
       {
         id: 1,
         value:
-          "Led 8 engineers through a 12-month modernization of a legacy banking platform. Replaced synchronous processing bottlenecks with event-driven architecture, cutting transaction latency by 40%+ and improving throughput by 30%+.",
+          "Led 8 engineers through a 12-month modernization of the legacy platform behind the company's core financial operations. Replaced synchronous processing bottlenecks with event-driven architecture, cutting transaction latency by 40%+ and improving throughput by 30%+.",
       },
       {
         id: 2,

@@ -26,14 +26,17 @@ const About = () => {
               and the microfrontend integrations nobody wants to touch twice.
             </p>
             <p>
-              Most recently at EPS (Vilnius), I led a team of 8 engineers
-              re-architecting a legacy banking infrastructure that supported
-              critical financial operations. We cut transaction latency by
-              {/* TODO: replace with actual % */} 40%+ and improved throughput
-              by 30%+, unblocking key product milestones.
+              The work I'd point to first is EPS, a fintech in Vilnius,
+              Lithuania, where I led a team of 8 engineers through a 12-month
+              re-architecture of the legacy platform behind their core
+              financial operations. We cut transaction latency by 40%+ and
+              improved throughput by 30%+ &mdash; and got there by arguing the
+              company out of an 18-month full rewrite in favour of targeted
+              changes, which kept the platform in production throughout the
+              migration.
             </p>
             <p>
-              Before that, I spent five months contributing to the training of
+              I've also spent five months contributing to the training of
               Gemini 2.5 Pro through Turing&mdash;specifically catching
               hallucinations and anti-patterns in .NET and React output. That
               work is now in a model millions of developers use daily.

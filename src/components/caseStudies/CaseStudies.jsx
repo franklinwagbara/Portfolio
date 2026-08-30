@@ -6,7 +6,7 @@ const caseStudies = [
     id: 1,
     tag: "Banking Modernization",
     title: "Re-architecting a Banking Settlement Platform",
-    company: "EPS — Vilnius",
+    company: "EPS — Fintech · Vilnius, Lithuania",
     role: "Lead Software Engineer",
     period: "Jan–Dec 2024",
     tldr: `Led 8 engineers through a 12-month modernization of a legacy .NET banking platform supporting critical financial operations. Cut transaction latency by 40%+ and improved throughput by 30%+ through targeted architectural changes — not a full rewrite. Established the performance baselines and KPIs the platform still runs on.`,

@@ -39,8 +39,8 @@ export const HeaderIntro = () => {
       </h2>
       <p className="hero-summary">
         9 years across Node.js, TypeScript and .NET &middot; Gemini 2.5 Pro
-        training contributor &middot; Shipped for FCMB, EPS Vilnius, and
-        multi-tenant SaaS
+        training contributor &middot; Shipped for FCMB, Lithuanian fintech EPS,
+        and multi-tenant SaaS
       </p>
       <CTA
         action1={CV}
