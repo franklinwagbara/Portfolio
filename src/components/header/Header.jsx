@@ -33,14 +33,14 @@ export const HeaderIntro = () => {
       </p>
       <h1>Franklin Wagbara</h1>
       <h2 className="profession">
-        I make legacy .NET banking platforms faster
+        I make business-critical systems faster
         <br />
-        and help LLMs ship production-grade code.
+        and help AI ship production-grade code.
       </h2>
       <p className="hero-summary">
-        9 years building enterprise backends &middot; Gemini 2.5 Pro training
-        contributor &middot; Shipped for FCMB, EPS Vilnius, and multi-tenant
-        SaaS
+        9 years across Node.js, TypeScript and .NET &middot; Gemini 2.5 Pro
+        training contributor &middot; Shipped for FCMB, EPS Vilnius, and
+        multi-tenant SaaS
       </p>
       <CTA
         action1={CV}

@@ -48,8 +48,39 @@
     .main-content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1.1rem;
       max-width: 100%;
+
+      // The global `section { text-align: center }` centres this prose, which
+      // makes multi-line paragraphs hard to scan. Long-form copy reads left.
+      text-align: left;
+
+      p {
+        max-width: 68ch;
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: var(--color-light);
+      }
+
+      // Opening line carries the introduction — give it a little more presence.
+      p:first-of-type {
+        font-size: 1rem;
+        color: var(--color-white);
+      }
+
+      .about-location {
+        margin-top: 0.2rem;
+        padding-left: 0.9rem;
+        border-left: 2px solid var(--primary-color-variant);
+        font-size: 0.85rem;
+        color: var(--color-light);
+      }
+
+      .btn {
+        margin-top: 0.5rem;
+      }
 
       p a {
         color: var(--primary-color);
