@@ -26,7 +26,12 @@ const Contact = () => {
           setStatus("success");
           e.target.reset();
         },
-        () => {
+        (err) => {
+          // Surface the real EmailJS failure — the delivery service can fail
+          // for reasons the form cannot fix (e.g. an expired Gmail OAuth
+          // grant returns 412 "Invalid grant"), and silently swallowing it
+          // makes that indistinguishable from a bad submission.
+          console.error("EmailJS send failed:", err?.status, err?.text || err);
           setStatus("error");
         },
       )
@@ -84,7 +89,11 @@ const Contact = () => {
           )}
           {status === "error" && (
             <p className="form__status form__status--error">
-              Something went wrong. Please try again or email me directly.
+              Couldn't send that from here. Please email me directly at{" "}
+              <a href="mailto:wagbarafranklin1@gmail.com">
+                wagbarafranklin1@gmail.com
+              </a>
+              .
             </p>
           )}
         </form>

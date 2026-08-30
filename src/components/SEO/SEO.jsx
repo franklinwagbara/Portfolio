@@ -6,7 +6,7 @@ export default function SEO() {
   const title =
     "Franklin Wagbara — Senior Software Engineer & Gemini 2.5 Pro Contributor";
   const description =
-    "Senior Software Engineer with 9+ years building enterprise .NET and React platforms for banking and fintech. Contributor to Gemini 2.5 Pro training. Available for remote senior roles globally.";
+    "Senior Software Engineer with 9+ years building high-performance backends in Node.js, TypeScript and .NET for banking, fintech and SaaS. Contributor to Gemini 2.5 Pro training. Available for remote senior roles globally.";
   const ogImage = `${siteUrl}/og-image.png`;
 
   const personSchema = {
@@ -23,6 +23,8 @@ export default function SEO() {
       "https://x.com/wagbaraf",
     ],
     knowsAbout: [
+      "Node.js",
+      "TypeScript",
       ".NET",
       "C#",
       "ASP.NET Core",

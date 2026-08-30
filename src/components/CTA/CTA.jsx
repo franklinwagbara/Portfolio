@@ -1,6 +1,13 @@
 import "./CTA.scss";
 import { PropTypes } from "prop-types";
 
+// Only send off-site links to a new tab. In-page anchors like "#contact" must
+// stay in this tab, otherwise clicking them opens a duplicate of the site
+// instead of scrolling to the section.
+const isExternal = (url) => /^(https?:)?\/\//.test(url || "");
+const linkTargetProps = (url) =>
+  isExternal(url) ? { target: "_blank", rel: "noreferrer" } : {};
+
 const CTA = ({
   download = false,
   label1 = "Download CV",
@@ -14,18 +21,12 @@ const CTA = ({
         href={action1}
         className="btn"
         download={download}
-        target="_blank"
-        rel="noreferrer"
+        {...(download ? {} : linkTargetProps(action1))}
       >
         {label1}
       </a>
       {action2 && (
-        <a
-          href={action2}
-          className="btn btn-primary"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={action2} className="btn btn-primary" {...linkTargetProps(action2)}>
           {label2}
         </a>
       )}
