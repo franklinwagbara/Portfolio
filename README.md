@@ -36,6 +36,14 @@ netlify.toml    Netlify build command and publish directory
 (`Redesign Portfolio/src/App.tsx`) and `app/globals.css` of its `index.css`,
 so the two render identically. Keep them that way when editing.
 
+**One intentional deviation:** the three About-section sentences use commas and
+full stops where the design source uses em dashes. That was a deliberate copy
+change, not drift. Everything else is byte-identical to the design source.
+
+The CV is served from `public/resume.pdf` (a copy of `src/assets/cv.pdf`). Both
+download links in the design point at `/resume.pdf`, so replacing that file is
+all that is needed to publish a new CV.
+
 ### Fonts
 
 Fraunces (display), Inter (sans) and JetBrains Mono (mono) are loaded from
