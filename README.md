@@ -40,6 +40,11 @@ so the two render identically. Keep them that way when editing.
 full stops where the design source uses em dashes. That was a deliberate copy
 change, not drift. Everything else is byte-identical to the design source.
 
+The design source lives in `Redesign Portfolio/` (git-ignored, and excluded
+from `tsconfig.json` so it is neither type-checked nor bundled). Diff
+`app/page.tsx` against `Redesign Portfolio/src/App.tsx` after any design update;
+the About wording above should be the only difference.
+
 The CV is served from `public/resume.pdf` (a copy of `src/assets/cv.pdf`). Both
 download links in the design point at `/resume.pdf`, so replacing that file is
 all that is needed to publish a new CV.

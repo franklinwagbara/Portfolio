@@ -24,3 +24,6 @@ next-env.d.ts
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Figma Make design export kept locally as the port reference (see README)
+/Redesign Portfolio/

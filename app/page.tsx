@@ -86,7 +86,7 @@ const EXPERIENCE = [
   },
 ];
 
-const PROJECTS = [
+const PROJECTS_FEATURED = [
   {
     index: "01",
     name: "Elevare",
@@ -126,6 +126,27 @@ const PROJECTS = [
     stack: ["Java", "Spring Boot", "React", "REST API"],
     github: "https://github.com/franklinwagbara/Payment-Platform",
     live: "https://payment-platform-delta.vercel.app/",
+  },
+];
+
+const PROJECTS_ARCHIVE = [
+  {
+    year: "2024",
+    name: "Crypto Finder",
+    tagline: "Cryptocurrency Tracker",
+    description: "Live crypto tracking with price data, market stats, and trending coins.",
+    stack: ["React", "JavaScript", "REST API", "CSS"],
+    github: "https://github.com/franklinwagbara/Crypto-finder",
+    live: "https://franklin-crypto-finder.netlify.app/",
+  },
+  {
+    year: "2023",
+    name: "Fast Track",
+    tagline: "Executive Diagnostic Dashboard",
+    description: "Diagnostic dashboard featuring glassmorphism UI and real-time analytics.",
+    stack: ["React", "TypeScript", "Node.js", "Express"],
+    github: "https://github.com/franklinwagbara/Fast-Track",
+    live: null,
   },
 ];
 
@@ -891,11 +912,12 @@ function Projects() {
           </h2>
         </FadeIn>
 
+        {/* Featured cards */}
         <div
           className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-px"
           style={{ background: "#2a2622" }}
         >
-          {PROJECTS.map((project, i) => (
+          {PROJECTS_FEATURED.map((project, i) => (
             <FadeIn key={i} delay={i * 80}>
               <TiltCard
                 style={{ background: "#0d0c0b", minHeight: "320px" }}
@@ -960,6 +982,84 @@ function Projects() {
             </FadeIn>
           ))}
         </div>
+
+        {/* Archive list */}
+        <FadeIn delay={100}>
+          <div className="mt-16">
+            <div className="section-number mb-6">Other noteworthy projects</div>
+            <div className="space-y-px">
+              {PROJECTS_ARCHIVE.map((project, i) => (
+                <div
+                  key={i}
+                  className="group border-t py-5 grid gap-4 transition-colors duration-200"
+                  style={{
+                    borderColor: "#2a2622",
+                    gridTemplateColumns: "3rem 1fr auto",
+                    alignItems: "center",
+                  }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#161412"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "transparent"; }}
+                >
+                  <span
+                    className="font-mono-code text-xs"
+                    style={{ color: "#2a2622", letterSpacing: "0.05em" }}
+                  >
+                    {project.year}
+                  </span>
+
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                      <span
+                        className="font-display text-base font-light transition-colors duration-200 group-hover:text-[#c9a96e]"
+                        style={{ color: "#e8e3d9" }}
+                      >
+                        {project.name}
+                      </span>
+                      <span className="section-number">{project.tagline}</span>
+                    </div>
+                    <div className="mt-1.5 flex flex-wrap gap-2">
+                      {project.stack.map((t) => (
+                        <span
+                          key={t}
+                          className="font-mono-code text-xs"
+                          style={{ color: "#3a3632", letterSpacing: "0.04em" }}
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 shrink-0">
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        data-hover="true"
+                        className="text-xs uppercase tracking-widest transition-colors duration-200 hover:text-[#c9a96e]"
+                        style={{ color: "#4a4642", letterSpacing: "0.1em" }}
+                      >
+                        Live ↗
+                      </a>
+                    )}
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      data-hover="true"
+                      className="text-xs uppercase tracking-widest transition-colors duration-200 hover:text-[#c9a96e]"
+                      style={{ color: "#4a4642", letterSpacing: "0.1em" }}
+                    >
+                      Code ↗
+                    </a>
+                  </div>
+                </div>
+              ))}
+              <div className="hairline" />
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
