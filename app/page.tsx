@@ -454,22 +454,38 @@ function Navbar() {
             </a>
           ))}
         </div>
-        <a
-          href="mailto:franklinwagbara@gmail.com"
-          data-hover="true"
-          className="hidden md:block text-xs tracking-widest uppercase px-5 py-2.5 border transition-all duration-300"
-          style={{ borderColor: "rgba(201,169,110,0.3)", color: "#c9a96e", letterSpacing: "0.1em" }}
-          onMouseEnter={(e) => {
-            (e.currentTarget as HTMLElement).style.background = "#c9a96e";
-            (e.currentTarget as HTMLElement).style.color = "#0d0c0b";
-          }}
-          onMouseLeave={(e) => {
-            (e.currentTarget as HTMLElement).style.background = "transparent";
-            (e.currentTarget as HTMLElement).style.color = "#c9a96e";
-          }}
-        >
-          Hire Me
-        </a>
+        <div className="hidden md:flex items-center gap-4">
+          <a
+            href="/resume.pdf"
+            download
+            data-hover="true"
+            className="inline-flex items-center gap-1.5 text-xs tracking-widest uppercase transition-colors duration-300"
+            style={{ color: "#4a4642", letterSpacing: "0.1em" }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#c9a96e"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#4a4642"; }}
+          >
+            <svg width="11" height="11" viewBox="0 0 13 13" fill="none" style={{ flexShrink: 0 }}>
+              <path d="M6.5 1v7M3.5 5.5l3 3 3-3M1 10h11" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            CV
+          </a>
+          <a
+            href="mailto:wagbarafranklin@yahoo.com"
+            data-hover="true"
+            className="text-xs tracking-widest uppercase px-5 py-2.5 border transition-all duration-300"
+            style={{ borderColor: "rgba(201,169,110,0.3)", color: "#c9a96e", letterSpacing: "0.1em" }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.background = "#c9a96e";
+              (e.currentTarget as HTMLElement).style.color = "#0d0c0b";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.background = "transparent";
+              (e.currentTarget as HTMLElement).style.color = "#c9a96e";
+            }}
+          >
+            Hire Me
+          </a>
+        </div>
         <button
           className="md:hidden"
           style={{ color: "#c9a96e" }}
@@ -619,6 +635,20 @@ function Hero() {
           >
             Get in Touch
           </a>
+          <a
+            href="/resume.pdf"
+            download
+            data-hover="true"
+            className="inline-flex items-center gap-2 text-sm transition-all duration-300"
+            style={{ color: "#4a4642", letterSpacing: "0.05em" }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#c9a96e"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#4a4642"; }}
+          >
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style={{ flexShrink: 0 }}>
+              <path d="M6.5 1v7M3.5 5.5l3 3 3-3M1 10h11" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            Download CV
+          </a>
         </div>
 
         <div
@@ -684,8 +714,8 @@ function About() {
           <FadeIn delay={200}>
             <div className="space-y-5" style={{ color: "#7a746c", lineHeight: "1.85" }}>
               <p>
-                Nine years deep in backend systems — primarily .NET infrastructure for Nigerian
-                banks and European fintech — I've learned that the best code is the code that
+                Nine years deep in backend systems, primarily .NET infrastructure for Nigerian
+                banks and European fintech. I've learned that the best code is the code that
                 survives team turnover, regulatory audits, and production crises at 2am.
               </p>
               <p>
@@ -704,8 +734,8 @@ function About() {
                 , an AI career companion already in users' hands.
               </p>
               <p>
-                I treat AI as a productivity multiplier, not a shortcut — the kind of engineer who
-                uses Copilot with guardrails and architecture reviews, not blind trust.
+                I treat AI as a productivity multiplier, not a shortcut. I'm the kind of engineer
+                who uses Copilot with guardrails and architecture reviews, not blind trust.
               </p>
             </div>
             <div className="mt-8 flex gap-5">
@@ -740,7 +770,7 @@ function About() {
               B.Sc. Computer Science & Electronics Engineering
             </h3>
             <p className="mt-1 text-sm" style={{ color: "#7a746c" }}>
-              University of Regina — Saskatchewan, Canada
+              University of Regina, Saskatchewan, Canada
             </p>
           </div>
         </FadeIn>
