@@ -762,8 +762,8 @@ function About() {
             <div className="mt-8 flex gap-5">
               {[
                 { label: "GitHub", href: "https://github.com/franklinwagbara" },
-                { label: "LinkedIn", href: "https://linkedin.com/in/franklinwagbara" },
-                { label: "Email", href: "mailto:franklinwagbara@gmail.com" },
+                { label: "LinkedIn", href: "https://www.linkedin.com/in/franklin-wagbara-047a1a45/" },
+                { label: "Email", href: "mailto:wagbarafranklin@yahoo.com" },
               ].map((l) => (
                 <a
                   key={l.label}
@@ -1220,7 +1220,7 @@ function Footer() {
         <div className="flex gap-6">
           {[
             { label: "GitHub", href: "https://github.com/franklinwagbara" },
-            { label: "LinkedIn", href: "https://linkedin.com/in/franklinwagbara" },
+            { label: "LinkedIn", href: "https://www.linkedin.com/in/franklin-wagbara-047a1a45/" },
             { label: "Elevare", href: "https://www.elevareapp.net" },
           ].map((link) => (
             <a
